@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #464e6a;
+  --secondary-color: #b67978;
+  --third-color: #d3ac79;
+  --fourth-color: #a09d52;
+  --fifth-color: #c4c0be;
+}
+
+body {
+  font: "Hanken Grotesk", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
