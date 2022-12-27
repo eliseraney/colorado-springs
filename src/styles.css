@@ -11,3 +11,7 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
+i {
+  color: var(--third-color);
+}
