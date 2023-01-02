@@ -12,6 +12,11 @@ body {
   color: white;
 }
 
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/images/garden-of-the-gods.jpg");
@@ -54,13 +59,70 @@ header a {
   margin-top: 30px;
 }
 
+header a:hover {
+  color: var(--secondary-color);
+  background-color: white;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(70, 78, 106, 0.8),
+      rgba(70, 78, 106, 0.8)
+    ),
+    url("/images/downtown.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+footer p,
+footer li a {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
 i {
+  text-align: center;
   color: var(--third-color);
+  font-size: 18px;
+  padding: 2px;
+}
+
+i:hover {
+  color: var(--fourth-color);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.info-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -82,5 +144,27 @@ i {
 
   header a {
     font-size: 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  footer p,
+  footer li a {
+    font-size: 10px;
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  .info-links {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
