@@ -15,6 +15,7 @@ body {
 section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -64,6 +65,32 @@ header a:hover {
   background-color: white;
 }
 
+main {
+  background-color: var(--secondary-color);
+}
+
+main h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+main h3 {
+  font-size: 28px;
+  letter-spacing: 5px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+main img {
+  max-width: 550px;
+  align-content: center;
+}
+
+main p {
+  line-height: 1.5;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(70, 78, 106, 0.8),
@@ -74,7 +101,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 50px 0;
 }
 
 footer ul {
@@ -116,6 +142,12 @@ i:hover {
   margin: 0 auto;
 }
 
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
 .info-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -146,8 +178,12 @@ i:hover {
     font-size: 10px;
   }
 
-  footer {
-    padding: 20px 10px;
+  section {
+    padding: 30px;
+  }
+
+  main img {
+    display: none;
   }
 
   footer h4 {
@@ -161,6 +197,11 @@ i:hover {
 
   i {
     font-size: 16px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .info-links {
