@@ -183,7 +183,7 @@ i:hover {
   }
 
   main img {
-    display: none;
+    max-width: 100%;
   }
 
   footer h4 {
