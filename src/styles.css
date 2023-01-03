@@ -87,12 +87,17 @@ main h5 {
 }
 
 main img {
-  max-width: 100%;
+  width: 100%;
   align-content: center;
 }
 
 main p {
   line-height: 1.5;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 footer {
@@ -169,15 +174,15 @@ i:hover {
 }
 
 .card-footer {
-  padding: 30px 15px;
+  padding: 15px;
+}
+
+.card-headers img {
+  aspect-ratio: 1/1;
 }
 
 .card p {
   font-size: 14px;
-}
-
-.card img {
-  max-width: 50%;
 }
 
 .card a {
@@ -201,7 +206,8 @@ i:hover {
   background-color: white;
 }
 
-.info-links {
+.info-links,
+.card-headers {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -260,6 +266,18 @@ i:hover {
   .about-section {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .card-headers {
+    grid-template-columns: 1fr;
+  }
+
+  .card-headers img {
+    display: none;
+  }
+
+  .card-headers iframe {
+    aspect-ratio: 16/9;
   }
 
   .cards {
