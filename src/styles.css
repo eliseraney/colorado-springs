@@ -83,7 +83,7 @@ main h3 {
 }
 
 main img {
-  max-width: 550px;
+  max-width: 100%;
   align-content: center;
 }
 
@@ -180,10 +180,6 @@ i:hover {
 
   section {
     padding: 30px;
-  }
-
-  main img {
-    max-width: 100%;
   }
 
   footer h4 {
