@@ -206,6 +206,17 @@ i:hover {
   background-color: white;
 }
 
+.photos {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.photo {
+  aspect-ratio: 1/1;
+}
+
 .info-links,
 .card-headers {
   display: grid;
@@ -221,7 +232,9 @@ i:hover {
 }
 
 #activities h2,
-#activities h3 {
+#activities h3,
+#gallery h2,
+#gallery h3 {
   text-align: center;
 }
 
@@ -281,6 +294,10 @@ i:hover {
   }
 
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .photos {
     grid-template-columns: 1fr;
   }
 
